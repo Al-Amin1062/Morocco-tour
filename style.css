@@ -13,6 +13,19 @@ body {
 
 header {}
 
+.wfixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; 
+  font-size: 50px; 
+  color: #25D366; 
+  cursor: pointer;
+  
+}
+.wfixed:hover{
+    transform: translateX(-6px);
+}
 .navbar {
     max-width: 1920px;
     height: 189px;
@@ -60,8 +73,9 @@ header {}
 }
 
 .nav_Container a:hover {
-    background-color: #ddd;
+    background-color: ;
     border-radius: 4px;
+    color: #999;
 }
 
 .subnav-content {
@@ -248,6 +262,9 @@ header {}
     border-radius: 5px;
     display: inline-block;
 }
+.main_content .button1 a:hover{
+    color:#999 ;
+}
 
 /*start_journey--------------------------------*/
 .start_journey {
@@ -417,6 +434,10 @@ header {}
     display: inline-block;
 }
 
+.privet_1 img:hover{
+    transform: translateY(-6px);
+}
+
 /*.privet_1 h5 {
     position: absolute;
     top: 50%;
@@ -533,6 +554,9 @@ header {}
     padding: 20px;
     background-color: white;
     text-align: center;
+}
+.local_part:hover {
+    transform: translateY(-6px);
 }
 
 .local_part .icon {
