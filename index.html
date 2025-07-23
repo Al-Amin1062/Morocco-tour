@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Morocco-tour</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morocco-tour</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="images/morocco_1_-removebg-preview-300x300.png" alt="Morocco-tour" style="width:150px; height:150px"></div>
+            <div class="nav_Container">
+                <div class="menu-icon" id="menu-toggle">&#9776;</div>
+                <ul class="nav_links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li class="subnav">
+                        <a href="#" class="subnavbtn">Morocco Tours <i class="fa fa-caret-down"></i></a>
+                        <div class="subnav-content">
+                            <a href="#bring">Bring</a>
+                            <a href="#deliver">Deliver</a>
+                            <a href="#package">Package</a>
+                            <a href="#express">Express</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Day Trips</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const submenuBtn = document.getElementById('toggle-submenu');
+        const submenu = document.getElementById('submenu');
+
+        // toggle menu open/close
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') ? '✖' : '&#9776;';
+        });
+
+        // toggle submenu dropdown
+        submenuBtn.addEventListener('click', () => {
+            submenu.classList.toggle('show');
+        });
+        </script>
+        <div class="main_page">
+            <div class="back_image">
+                <div class="main_content">
+                    <h6>Immersive Cultural Experiences Specialist</h6>
+                    <h1>Discover the Enchantment of Morocco with Us</h1>
+                    <div class="button1"><a href="#">EXPLORE NOW <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="start_journey">
+                <div class="left_side">
+                    <h1>Start your journey to morocco today</h1>
+                    <div class="dot"></div>
+                    <h2>Enjoy a memorable exploration of Morocco's rich history, landscapes and traditions with Morocco Zida Tours. book now for an authentic and exceptional travel experience.</h2>
+                    <h3>Book at :</h3>
+                    <div class="whats_number">
+                        <p><i class="fa-brands fa-square-whatsapp"></i> &nbsp;+334763754387</p>
+                        <p><i class="fa-brands fa-square-whatsapp"></i>&nbsp; +334763754387</p>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <img src="images/desert-19.jpg">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Morroco privet tour --------------------------->
+    <div class="privet_tour">
+        <h1 class="privet_head">Morocco private tours</h1>
+        <h2 class="subprivet_head">Discover the timeless rhythms of life in the desert.</h2>
+        <p class="fullprivet_head">A Morocco private tour allows you to delve deep into the heart of Moroccan culture, embracing its traditions, cuisine, and hospitality alongside knowledgeable local guides. Wander through labyrinthine alleys, where the aromas of exotic spices mingle with the sounds of bustling souks, and artisans practice ancient crafts passed down through generations.
+            <br><span>
+                Venture southward to explore the oases, valleys, and towering dunes of the Sahara Desert, where the shifting sands paint a mesmerizing canvas under the vast desert sky. Ride a camel into the sunset, camp under a blanket of stars, and immerse yourself in the</p></span>
+        <div class="privet_container">
+            <div class="privet_1">
+                <img src="Images/desert-6.jpg" alt="photo" style="width:260%; height:250px;">
+                <div class="privet_2">
+                    <h5>TOURS FROM MARRAKECH</h5>
+                </div>
+            </div>
+            <div class="privet_1">
+                <img src="Images/desert-4.jpg" alt="photo" style="width:260%; height:250px;">
+                <div class="privet_2">
+                    <h5>TOURS FROM CASABLANCA</h5>
+                </div>
+            </div>
+            <div class="privet_1">
+                <img src="Images/desert-5.jpg" alt="photo" style="width:260%; height:250px;">
+                <div class="privet_2">
+                    <h5>TOURS FROM TANGIER</h5>
+                </div>
+            </div>
+            <div class="privet_1">
+                <img src="Images/desert-12.jpg" alt="photo" style="width:260%; height:250px;">
+                <div class="privet_2">
+                    <h5>TOURS FROM FES</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Marrakech day trips -->
+    <div class="Marrakech">
+        <h1 class="Marrakech_day">Marrakech day trips</h1>
+        <p class="full_Marrakech">Exploring the outdoors around Marrakech offers a breathtaking journey into the heart of Morocco’s natural beauty. With a landscape that seamlessly blends rugged mountains, verdant valleys, and serene desert expanses, day trips from Marrakech promise unforgettable adventures. Whether you seek adrenaline-pumping activities or tranquil moments immersed in nature, there’s something for everyone just a stone’s throw away from the bustling city.</p>
+        <div class="Marrakech_container">
+            <div class="Marrakech_1">
+                <img src="Images/desert-18.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Day trip from Marrakech to Agafay desert</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+            <div class="Marrakech_1">
+                <img src="Images/desert-17.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Day trip from Marrakech to Imlil</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+            <div class="Marrakech_1">
+                <img src="Images/desert-16.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Day trip from Marrakech to Ouzoud Waterfalls</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+            <div class="Marrakech_1">
+                <img src="Images/desert-15-768x512.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Day trip from Marrakech to Ourika Valley</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+            <div class="Marrakech_1">
+                <img src="Images/desert-14-768x512.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Day trip from Marrakech to Ouarzazate and Ait ben haddou</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+            <div class="Marrakech_1">
+                <img src="Images/desert-13-768x512.jpg" alt="photo">
+                <div class="Marrakech_2">
+                    <h5>Essaouira Day Trip from Marrakech</h5>
+                    <div class="button_part"><button>SEE DETAILS</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Local expertis ------------------->
+    <div class="Local">
+        <div class="local_part">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i> </div>
+            <h1>Local Expertise</h1>
+            <p>As an agency based in Morocco, we have in-depth knowledge of the country, its culture, traditions and regions. We offer you expert advice and personalized itineraries to help you discover the hidden treasures of Morocco.</p>
+        </div>
+        <div class="local_part">
+            <div class="icon"><i class="fa-solid fa-person-walking-luggage"></i></div>
+            <h1>Personalized Service</h1>
+            <p>We pay special attention to every detail of your trip, ensuring that it perfectly matches your expectations and interests. Our dedicated team is on hand to answer all your requests and ensure you have a memorable stay.</p>
+        </div>
+        <div class="local_part">
+            <div class="icon"><i class="fa-solid fa-bag-shopping"></i> </div>
+            <h1>Safety and Comfort</h1>
+            <p>Your safety and comfort are our top priority. We carefully select our partners and accommodation to ensure high quality standards and ensure your well-being throughout your trip.</p>
+        </div>
+        <div class="local_part">
+            <div class="icon"><i class="fa-solid fa-location-crosshairs"></i> </div>
+            <h1>Authenticity</h1>
+            <p>We offer you an authentic and immersive experience, allowing you to discover Morocco through the eyes of the locals. Meet local artisans, stay in traditional riads, and savor deliciously authentic cuisine.</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Us -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-envelope"></i> moroccozidtours@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +212622337265</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +212667870195</p>
+                <p><i class="fa-solid fa-location-dot"></i> SAADA 3 IMM 131 No 6 TAMENSOURTE<br>MARRAKECH MOROCCO</p>
+            </div>
+            <!-- About Us -->
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Morocco Tours is dedicated to providing exceptional travel experiences in Morocco, curated for your pleasure and enrichment.</p>
+            </div>
+            <!-- Social & Payment -->
+            <div class="footer-section social">
+                <div class="icons">
+                    <i class="fa-brands fa-tripadvisor"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="payment">
+                    <img src="https://i.imgur.com/1J3U4BQ.png" alt="Payment Methods" />
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Morocco Tours</p>
+        </div>
+    </footer>
 </body>
+
 </html>

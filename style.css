@@ -1,3 +1,619 @@
-*{
-	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /*color: white;*/
+    max-width: 1920px;
+    margin: 00px;
+}
+
+header {}
+
+.navbar {
+    max-width: 1920px;
+    height: 189px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+
+
+}
+
+.navbar .logo {
+
+    margin-left: 7rem;
+
+}
+
+.nav_Container {
+    /*list-style: none;*/
+    margin-right: 13em;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 590.26px;
+    font-size: 18px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav_Container a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.subnav-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    border-bottom: 1px solid #999;
+
+}
+
+.subnav-content a:hover {
+    background-color: #fff;
+    color: #777;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto;
+        position: relative;
+        /* menu নিচে থাকবে এই navbar এর */
+        z-index: 1000;
+    }
+
+    .nav_Container {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 220%;
+        /* navbar এর নিচ থেকে শুরু */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        gap: 10px;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav_links.show {
+        display: flex;
+
+    }
+
+    .nav_links li a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #222;
+        padding: 10px 20px;
+    }
+
+    .subnav-content {
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subnav-content a {
+        display: none;
+    }
+
+
+
+    .subnav:hover .subnav-content {
+        display: none;
+        /* মোবাইলে hover কাজ করে না */
+    }
+
+    .navbar .logo {
+        margin: 0px 10px;
+    }
+}
+
+
+/*main page--------------------------------------------*/
+.main_page {
+    max-width: 100%;
+    width: 100%;
+}
+
+.back_image {
+    background-image: url(images/desert-20.jpg);
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: padding-box;
+    background-position: 50% 62%;
+    padding: 230px 40px 150px 40px;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 0px;
+    overflow: hidden;
+}
+
+.main_content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+
+.main_content h6 {
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main_content h1 {
+    width: 72%;
+    color: #fff;
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_content .button1 {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.main_content .button1 a {
+    text-decoration: none;
+    background-color: #ffa840;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*start_journey--------------------------------*/
+.start_journey {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 5rem;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.left_side {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+.left_side h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: goldenrod;
+}
+
+.dot {
+    width: 60px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+}
+
+.left_side h2 {
+    color: #333;
+    line-height: 1.7rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.left_side h3 {
+    color: #888;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.whats_number {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+    margin-left: 8rem;
+    margin-top: 9rem;
+}
+
+.whats_number p {
+    font-size: 28px;
+    color: #999;
+}
+
+.whats_number i {
+    color: green;
+    font-size: 28px;
+}
+
+.right_side {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_side img {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    border-radius: 10px;
+}
+
+
+/*mOROCO PRIVET TOUR*----------------------*/
+
+/* ========== PRIVET TOUR ========== */
+.privet_tour {
+    margin-top: 3rem;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.privet_head {
+    font-size: 40px;
+    font-weight: 400;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.subprivet_head {
+    font-size: 23px;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.fullprivet_head {
+    font-size: 16px;
+    color: #111;
+    text-align: left;
+    line-height: 1.6rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.privet_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+/* PRIVET ITEM */
+.privet_1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.privet_1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.privet_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.privet_2 h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 50px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*.privet_1 h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-align: center;
+}*/
+
+
+/* ========== MARRAKECH TOUR ========== */
+.Marrakech {
+    margin-top: 3rem;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.Marrakech_day {
+    font-size: 40px;
+    font-weight: 400;
+    color: darkgoldenrod;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.full_Marrakech {
+    font-size: 16px;
+    font-weight: 300;
+    color: #111;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto 2rem;
+    line-height: 1.6rem;
+}
+
+.Marrakech_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* MARRAKECH ITEM */
+.Marrakech_1 {
+    background-color: #f2f2f2;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Marrakech_1:hover {
+    transform: translateY(-6px);
+}
+
+.Marrakech_1 img {
+    width: 100%;
+    height: auto;
+}
+
+.Marrakech_2 {
+    padding: 15px 20px;
+    text-align: left;
+    color: black;
+    flex-grow: 1;
+}
+
+.Marrakech_1 h5 {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.button_part {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button_part button {
+    padding: 10px 20px;
+    background-color: darkgoldenrod;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* ========== LOCAL EXPERTISE ========== */
+.Local {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 80%;
+    max-width: 100%;
+    margin: 3rem auto;
+    padding: 0 40px;
+
+}
+
+.local_part {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.local_part .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+
+.local_part h1 {
+    color: goldenrod;
+    font-size: 24px;
+    font-weight: 400;
+    height: 20%;
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.footer-section .icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #00ffcc;
+    /* For TripAdvisor */
+}
+
+.footer-section .icons i:nth-child(2) {
+    color: #3b5998;
+    /* Facebook */
+}
+
+.footer-section .icons i:nth-child(3) {
+    color: #c13584;
+    /* Instagram */
+}
+
+.payment img {
+    margin-top: 10px;
+    max-width: 200px;
+    border-radius: 6px;
+}
+
+.footer i {
+    margin-right: 8px;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #222;
+    margin-top: 20px;
 }
